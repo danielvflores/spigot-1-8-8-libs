@@ -3,7 +3,7 @@
 
     <groupId>com.github.danielvflores</groupId>
     <artifactId>spigot-libs</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
 
     <packaging>pom</packaging>
 
