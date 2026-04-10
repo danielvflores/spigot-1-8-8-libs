@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.github.danielvflores</groupId>
         <artifactId>spigot-libs</artifactId>
-        <version>${project.version}</version>
+        <version>1.4</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
