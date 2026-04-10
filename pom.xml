@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.danielflores</groupId>
+    <groupId>com.github.danielvflores</groupId>
     <artifactId>worldguard</artifactId>
     <version>6.2</version>
 
@@ -14,24 +14,25 @@
     <build>
         <plugins>
 
-            <!-- Simple Structure -->
+            <!-- Simple Strucure -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>3.1.1</version>
                 <executions>
                     <execution>
-                        <id>install-jar</id>
-                        <phase>initialize</phase>
+                        <id>attach-artifact</id>
+                        <phase>package</phase>
                         <goals>
                             <goal>install-file</goal>
                         </goals>
                         <configuration>
                             <file>${project.basedir}/worldguard-legacy-6.2.jar</file>
-                            <groupId>com.github.danielflores</groupId>
+                            <groupId>com.github.danielvflores</groupId>
                             <artifactId>worldguard</artifactId>
                             <version>6.2</version>
                             <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
                         </configuration>
                     </execution>
                 </executions>
