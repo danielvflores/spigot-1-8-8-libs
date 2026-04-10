@@ -2,46 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.danielvflores</groupId>
-    <artifactId>spigot-1-8-8-libs</artifactId>
-    <version>6.2.2</version>
+    <artifactId>spigot-libs</artifactId>
+    <version>6.2</version>
+    <packaging>pom</packaging>
 
-    <packaging>jar</packaging>
-
-    <build>
-        <plugins>
-
-            <!-- ESTE ES EL CORRECTO -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.1</version>
-            </plugin>
-
-            <!-- Adjunta tu jar -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.5.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-artifact</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>attach-artifact</goal>
-                        </goals>
-                        <configuration>
-                            <artifacts>
-                                <artifact>
-                                    <file>${project.basedir}/worldguard-legacy-6.2.jar</file>
-                                    <type>jar</type>
-                                </artifact>
-                            </artifacts>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-    </build>
-
+    <modules>
+        <module>worldguard</module>
+        <module>worldedit</module>
+    </modules>
 </project>
