@@ -8,6 +8,5 @@
 
     <modules>
         <module>worldguard</module>
-        <module>worldedit</module>
     </modules>
 </project>
